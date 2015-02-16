@@ -10,8 +10,5 @@ if hours <= 40:
     print 'ur salary this week is ', sal
 else: 
     hours_extra = hours - 40
-    rate_extra = rate * 1.5
-    sal = hours * rate
-    sal_extra = hours_extra * rate_extra
-    sal = sal + sal_extra
+    sal = ((hours - 40) * rate * 1.5) + (40 * rate)
 print 'congrats Mr\n, u worked ', hours, '\n', ' ur salary is \n', sal
