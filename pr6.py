@@ -1,10 +1,8 @@
 # Write a program to prompt for a score between 0.0 and 1.0. If the score is out of range, print an error. If the score is between 0.0 and 1.0, print a grade using the following table:
 score = raw_input("Enter a Score between 0.0 and 1.0:")
 s = float(score)
-if s > 1:
-    print 'The range is between 0.0 and 1.0'
-elif s < 0:
-    print 'The range is between 0.0 and 1.0'
+if s > 1 or s < 0:
+    print 'The range has to be between 0.0 and 1.0 try again'
 else:
     if 0.9 < s <= 1:
         print 'A'
